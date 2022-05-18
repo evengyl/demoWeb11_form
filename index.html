@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>Ajouter une annonce immobilière</h1>
+        <form class="myForm" method="POST">
+
+            <label for="nameAnnonce">Nom de l'annonce : </label>
+            <input required id="nameAnnonce" type="text" maxlength="100" minlength="5" name="nameAnnonce">
+            <br><br>
+
+            <label>Images de l'annonce : </label>
+            <input required type="file" name="imageAnnonce" multiple>
+            <br><br>
+
+            <label>Prix de l'annonce : </label>
+            <input required type="number" min="30000" max="1000000" name="priceAnnonce">
+            <br><br>
+
+            <label>Email de l'annonceur</label>
+            <input type="email" name="emailAnnonceVendeur" value="tutu@gmail.com" disabled>
+            <br><br>
+
+            <label>Clé de validation reçue par sms : </label>
+            <input type="password" name="validationCodeSecret">
+            <br><br>
+
+
+            <label>Catégorie de l'annonce : </label>
+            <input type="search" name="categorie">
+            <br><br>
+
+            <label>Numéro de l'agence : </label>
+            <input type="tel" name="agenceTel">
+            <br><br>
+
+
+            <label>Site web de l'agence : </label>
+            <input type="url" name="agencyUrl">
+            <br><br>
+
+            <label>Couleur de la brique de façade : </label>
+            <input type="color" name="briqueColor">
+            <br><br>
+
+            <label>Date de première disponibilité : </label>
+            <input type="date" name="disponibiliteDate">
+            <br><br>
+
+
+            <label>Départ des heures de visite : </label>
+            <input type="time" name="visitHourStart">
+            <br>
+            <label>Fin des heures de visite : </label>
+            <input type="time" name="visitHourStop">
+            <br><br>
+
+            <label>Commentaire de l'annonceur : </label>
+            <textarea name="comment"></textarea>
+            <br><br>
+
+            <label>Nombre de chambres : </label>
+            <label>1&nbsp;</label><input type="radio" name="nbChambre" value="1">
+            <label>2&nbsp;</label><input type="radio" name="nbChambre" value="2">
+            <label>3&nbsp;</label><input type="radio" name="nbChambre" value="3">
+            <label>4&nbsp;</label><input type="radio" name="nbChambre" value="4">
+
+            <br>
+            <br>
+            <br>
+
+            <label>Autres pièces : </label><br>
+            <label>Piscine</label><input type="checkbox" name="otherPiece" value="piscine"><br>
+            <label>Jardin</label><input type="checkbox" name="otherPiece" value="jardin"><br>
+            <label>Terrasse</label><input type="checkbox" name="otherPiece" value="terrasse"><br>
+            <label>Garage</label><input type="checkbox" name="otherPiece" value="garage">
+
+            <br><br>
+            <br><br>
+            <label>Type de bien</label>
+            <select name="typeBien">
+                <option value="appart">Appartement</option>
+                <option value="maison">Maison</option>
+                <option value="villa">Villa</option>
+                <option value="be">Belle-étage</option>
+            </select>
+
+            <br><br>
+            <br><br>
+
+            <label>Aménagements : </label>
+            <select name="amenagement" multiple>
+                <option value="tondeuse">tondeuse</option>
+                <option value="meubles">meubles</option>
+                <option value="tv">tv</option>
+                <option value="cuisine">cuisine équipée</option>
+            </select>
+
+
+            <br><br>
+            <br><br>
+
+            <label>Pays région : </label>
+            <select name="nbPiecesPerFloor">
+                <optgroup label="Belgique">
+                    <option value="1">BX</option>
+                    <option value="2">Hainaut</option>
+                    <option value="3">Brabant Wallon</option>
+                </optgroup>
+                <optgroup label="France">
+                    <option value="4">Parigo</option>
+                    <option value="5">Marseille</option>
+                </optgroup>
+                <optgroup label="Bled">
+                    <option value="6">Bled 1</option>
+                    <option value="7">Bled 2</option>
+                </optgroup>
+            </select>
+
+
+
+            <br><br>
+            <br><br>
+
+            <input class="btn btn-success" type="submit" value="Envoyer">
+            <input class="btn btn-danger" type="reset" value="Vider le form">
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+
+        </form>
+    </div>
+</body>
+</html>
